@@ -267,7 +267,7 @@ Dialog {
                         verticalAlignment: VerticalAlignment.Center
                         horizontalAlignment: HorizontalAlignment.Center
                         textStyle.color: Color.create("#007aff")
-                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
 
                     }
