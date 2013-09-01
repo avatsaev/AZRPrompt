@@ -23,3 +23,27 @@ Properties of the control:
 -cancel_button: index of cancel button
 
 
+Example of use
+=================
+
+    AZRPrompt {
+      id: prompt
+      title: "This is an iOS7 diag"
+      body: "Isn't it beautiful?\nMake your choice by clicking of the buttons bellow."
+      cancel_text: "Nope"
+      ok_text: "It sure is"
+      
+      onClosed: {
+          
+          if (prompt.selected_choice == prompt.ok_buton){
+              result.text="Accepted"
+          }else if(prompt.selected_choice == prompt.cancel_buton){
+              result.text="Declined"
+          }else if(prompt.selected_choice == -1){
+              result.text="Closed"
+          }
+      }
+    }
+
+
+
