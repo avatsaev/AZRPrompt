@@ -7,8 +7,7 @@ Dialog {
     property string body: "Do you really want to quit without saving?\nAll changes will be lost."
     property string ok_text: "OK"
     property string cancel_text: "Cancel"
-    property int selected_choice : -1
-    
+    property int selected_choice : -1 
     property int cancel_buton : 1;
     property int ok_buton: 0;
     
