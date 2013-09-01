@@ -1,5 +1,6 @@
 import bb.cascades 1.0
 
+
 Dialog {
     id: mainDiag
     property url icon
