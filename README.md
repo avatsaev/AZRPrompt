@@ -46,4 +46,8 @@ Example of use
     }
 
 
+Result:
+
+![preview](http://i.imgur.com/xwU6vk0.png)
+
 
