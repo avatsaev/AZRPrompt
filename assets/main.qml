@@ -7,7 +7,7 @@ Page {
         AZRPrompt {
             id: prompt
             title: "This is an iOS7 diag"
-            body: "Isn't it beautiful?"
+            body: "Isn't it beautiful?\nMake your choice by clicking of the buttons bellow."
             cancel_text: "Nope"
             ok_text: "It sure is"
             

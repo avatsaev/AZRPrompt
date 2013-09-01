@@ -26,6 +26,7 @@ Dialog {
         id: prompt_root
         
         layout: AbsoluteLayout {}  
+        
         opacity: 0
         
         
@@ -86,26 +87,21 @@ Dialog {
             maxWidth: 600
             maxHeight: 600
             
-            layout: StackLayout {
-            
-            }
+            layout: StackLayout {}
             
             
             
             verticalAlignment: VerticalAlignment.Center
             horizontalAlignment: HorizontalAlignment.Center
+            
+            
             Container {
                 
                 
                 verticalAlignment: VerticalAlignment.Fill
-                
                 horizontalAlignment: HorizontalAlignment.Fill
                 
-                
-                
-                layout: DockLayout {
-                
-                }
+                layout: DockLayout {}
                 
                 
                 ImageView {
@@ -114,21 +110,21 @@ Dialog {
                     horizontalAlignment: HorizontalAlignment.Fill
                 
                 }
+                
                 Container {
                     verticalAlignment: VerticalAlignment.Fill
                     horizontalAlignment: HorizontalAlignment.Center
-                    bottomPadding: 40.0
                     
+                    bottomPadding: 40.0
                     topPadding: 20.0
                     leftPadding: 10.0
                     rightPadding: 10.0
+                    
                     ImageView {
                         id:icon
                         imageSource: icon
                         horizontalAlignment: HorizontalAlignment.Center
                         verticalAlignment: VerticalAlignment.Center
-                    
-                    
                     }
                     
                     Label {
@@ -183,7 +179,7 @@ Dialog {
                         }else if(event.touchType == TouchType.Up){
                             cancel_bkg.imageSource = "asset:///images/bottom_left.amd"
                             cancel_lbl.textStyle.color = Color.create("#007aff")
-                            selectedChoice = 1
+                            selectedChoice = cancel_buton
                             exit()
                         }
                     
@@ -214,7 +210,9 @@ Dialog {
                         verticalAlignment: VerticalAlignment.Center
                         horizontalAlignment: HorizontalAlignment.Center
                         textStyle.color: Color.create("#007aff")
-                    
+                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontSize: FontSize.Large
+
                     }
                 
                 }
@@ -235,7 +233,7 @@ Dialog {
                         }else if(event.touchType == TouchType.Up){
                             ok_bkg.imageSource = "asset:///images/bottom_right.amd"
                             ok_lbl.textStyle.color = Color.create("#007aff")
-                            selectedChoice = 0
+                            selectedChoice = ok_buton
                             exit()
                         }
                     
@@ -268,7 +266,9 @@ Dialog {
                         verticalAlignment: VerticalAlignment.Center
                         horizontalAlignment: HorizontalAlignment.Center
                         textStyle.color: Color.create("#007aff")
-                    
+                        textStyle.fontWeight: FontWeight.W100
+                        textStyle.fontSize: FontSize.Large
+
                     }
                 
                 }
