@@ -128,7 +128,7 @@ Dialog {
                     
                     Label {
                         text: title
-                        autoSize.maxLineCount: 1
+                        
                         multiline: false
                         textStyle.fontWeight: FontWeight.W400
                         textStyle.fontSize: FontSize.Large
@@ -144,7 +144,7 @@ Dialog {
                     
                     Label {
                         text: body
-                        autoSize.maxLineCount: 8
+                        
                         multiline: true
                         textStyle.fontWeight: FontWeight.W100
                         textStyle.fontSize: FontSize.Medium
